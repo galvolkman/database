@@ -30,6 +30,7 @@ class DictManager(Database):
         f = open("database.json", "w")
         json.dump(self.dict, f)
 
+
     def delete_value(self, key):
         super().delete_value(key)
         f = open("database.json", "w")
